@@ -26,6 +26,7 @@ is-it-maintained-open-issues = { repository = "tikv/jemallocator" }
 maintenance = { status = "actively-developed" }
 
 [dependencies]
+mustang = "0.14.4"
 libc = { version = "^0.2.8", default-features = false }
 
 [build-dependencies]

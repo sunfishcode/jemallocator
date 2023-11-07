@@ -33,6 +33,7 @@ test = false
 bench = false
 
 [dependencies]
+mustang = "0.14.4"
 tikv-jemalloc-sys = { path = "../jemalloc-sys", version = "0.5.0", default-features = false }
 libc = { version = "^0.2.8", default-features = false }
 

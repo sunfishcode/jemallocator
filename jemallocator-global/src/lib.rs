@@ -17,6 +17,8 @@
 #[macro_use]
 extern crate cfg_if;
 
+mustang::can_run_this!();
+
 cfg_if! {
     if #[cfg(any(
         feature = "force_global_jemalloc",

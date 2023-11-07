@@ -70,6 +70,8 @@
 #![cfg_attr(not(feature = "use_std"), no_std)]
 #![cfg_attr(feature = "cargo-clippy", allow(clippy::module_name_repetitions))]
 
+mustang::can_run_this!();
+
 #[cfg(test)]
 #[global_allocator]
 static ALLOC: tikv_jemallocator::Jemalloc = tikv_jemallocator::Jemalloc;

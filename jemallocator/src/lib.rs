@@ -21,6 +21,8 @@
 #![deny(missing_docs, broken_intra_doc_links)]
 #![no_std]
 
+mustang::can_run_this!();
+
 #[cfg(feature = "alloc_trait")]
 use core::alloc::{Alloc, AllocErr, CannotReallocInPlace, Excess};
 use core::alloc::{GlobalAlloc, Layout};
