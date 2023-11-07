@@ -58,6 +58,7 @@ fn copy_recursively(src: &Path, dst: &Path) -> io::Result<()> {
 // TODO: split main functions and remove following allow.
 #[allow(clippy::cognitive_complexity)]
 fn main() {
+    println!("cargo:rustc-link-arg=-nostartfiles");
     let target = env::var("TARGET").expect("TARGET was not set");
     let host = env::var("HOST").expect("HOST was not set");
     let num_jobs = env::var("NUM_JOBS").expect("NUM_JOBS was not set");

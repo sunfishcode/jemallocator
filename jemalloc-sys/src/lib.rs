@@ -49,6 +49,8 @@
 #![allow(renamed_and_removed_lints)]
 #![deny(missing_docs, broken_intra_doc_links)]
 
+extern crate eyra;
+
 use libc::{c_char, c_int, c_uint, c_void, size_t};
 
 // jemalloc uses `stdbool.h` to define `bool` for which the Rust equivalent is `bool`.
